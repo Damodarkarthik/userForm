@@ -17,7 +17,7 @@ let formData = {
   gender: "Male"
 };
 
-nameEl.addEventListener("change", function(event) {
+nameEl.addEventListener("blur", function(event) {
   if (event.target.value === "") {
     nameErrMsgEl.textContent = "Required*";
   } else {
@@ -27,7 +27,7 @@ nameEl.addEventListener("change", function(event) {
   formData.name = event.target.value;
 });
 
-emailEl.addEventListener("change", function(event) {
+emailEl.addEventListener("blur", function(event) {
   if (event.target.value === "") {
     emailErrMsgEl.textContent = "Required*";
   } else {
